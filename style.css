@@ -1,196 +1,186 @@
-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 5px solid #876955;
-    margin-left: 50px;
-    margin-top: 130px;
+/* Celý obsah - dále rozdělený na pravý a levý box*/
+.container {
+    display: flex;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
-h1 {
-    padding-left: 6%;
-    margin-bottom: 1px;
-    margin-top:0px;
-    font-size: 45px;
-    padding-top: 100px;
-
+/* Levá strana životopisu*/
+.box-right {
+    background-color: #b08e77;
+    width: 28%;
+    border-radius: 0 15px 0 0;
+    word-wrap: break-word;
+}
+/* Boční panel životopisu vpravo*/
+.box-left {
+    width: 72%;
+    word-wrap: break-word;
 }
 
-h3 {
-    color:#876955;
-    padding-left: 6%;
-    margin-top:0;
-    padding-top: 15px;
-   
-    margin-bottom: 3px ;
-    font-size: 25px;
+/*body*/
+body {
+    font-family: "Times New Roman";
+    line-height: 1.7;
+    font-style: normal;
 }
 
-h2 {
-    padding-left: 6%;
-    color:#876955;
-    font-size: 20px;
-    margin-top: 1px;
-    margin-bottom: 5px;
-}
-
+/*Záhlaví - od hlavního nadpisu po popis profilu*/
 header {
     background-color: #ddbba3;
     color:azure;
     border-radius: 15px 0 0 0;
-    margin-bottom: 0;
-    margin-top: 0;
 }
 
-footer {
-    background-color: #ddbba3;
-    color:azure;
-    margin-top: auto;
-    text-align: center;
-    margin-left: 4%;
-    margin-right: 4%;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    border-radius: 0 0 15px 15px;
-    margin-top: 0;
+/*Hlavní titulek - Ing.Barbora Blechová*/
+h1 {
+    padding-left: 6%;
+    font-size: 45px;
+    margin-top: 0px; 
+    margin-bottom: 15px;
+    padding-top: 100px;
 }
 
+/*Podtitul - název pozice*/
+h2 {
+    padding-left: 6%;
+    color:#876955;
+    font-size: 20px;
+}
+
+/*Popis mého profilu*/
 .profil {
     padding-left: 6%;
     padding-right: 6%;
     margin-top: 5px;
     padding-bottom: 20px;
 }
+
+/*Nadpisy pro sekce Vzdělání a kurzy, Pracovní zkušenosti, Volnočasové aktivity, Kontakt, Hardskills, Jazyky*/
+h3 {
+    color:#876955;
+    font-size: 25px;
+    padding-left: 6%;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+/*Sekce Vzdělání a kurzy*/
+.vzdelani {
+    background-color: rgb(249, 242, 233);
+    padding-top: 20px;
+}
+
+/*Sekce Pracovní zkušenosti, Volnočasové aktivity*/
+.prace,
+.hobby {
+    background-color: rgb(249, 242, 233);
+}
+
+/*Barevné hraničení názvů jednotlivých pozic/kurzů*/
 .pozice span {
     background-color: #b08e77;
     color: azure;
     padding: 5px 15px;
     border-radius: 15px 15px 15px 15px;
-    margin-top: 20px;
 }
 
+/*Formátování názvů jednotlivých pozic/kurzů jako celku */
 .pozice {
     padding-left: 6%;
+    padding-top: 10px;
+} 
+
+/*Jednotlivé položky seznamu pro pozice/kurzy/zájmy*/
+ul.pozice {
     margin-bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 12%;
+    padding-right: 6%;
 }
 
-.container {
-    display: flex;
-    flex: 1; 
-    padding-left: 4%;
-    padding-right: 4%;
+/*Obrázek v panelu vpravo*/
+img {
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #876955;
+    margin-left: 15%; 
+    margin-top: 130px;
 }
 
-body {
-    font-family: "Times New Roman";
-    line-height: 1.7;
-    font-style: normal;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-li {
-    margin-bottom: 0;
-    margin-top: 3px;
-
-}
-
-.box-right {
-    background-color: #b08e77;
-    width: 28%;
-    border-radius: 0 15px 0 0;
-
-
-}
-
-.box-left {
-    width: 72%;
-}
-
+/*Sekce Kontakt*/
 .kontakt {
     color:azure;
-    margin-top: 80px;
+    margin-top: 100px;
+    margin-bottom: 30px;
     padding-left: 12%;
     padding-right: 6%;
-    margin-bottom: 30px;
 }
 
-
-
+/*Sekce Hardskills*/
 .Hardskills {
     margin-top: 12px;
+    margin-bottom: 30px;
     padding-left: 12%;
     padding-right: 6%;
-    margin-bottom: 30px;
 }
 
+/*Sekce Jazyky*/
 .Jazyky {
     margin-top: 12px;
     padding-left: 12%;
     padding-right: 6%;
-    margin-bottom: 3px;
 }
 
-
-
-ul.jazyk {
+/*Seznam v sekci Kontakty*/
+ul.kontakty {
     color:azure;
-    margin-top: 3px;
-    padding-left: 12%;
-    padding-right: 6%;
-    margin-bottom: 0;
-
-
-}
-
- ul.skills {
-    color:azure;
-    margin-top: 3px;
-}
-
-.kontakt a:link,
-.kontakt a:visited {
-    color: azure;
-}
-
-a:link,
-a:visited {
-    color: rgb(133, 101, 57);
-}
-
-
-.kontakt a:hover,
-.projekt a:hover {
-    color: #e1c4a3;
-}
-
-.vzdelani,
-.prace,
-.hobby {
-    background-color: rgb(249, 242, 233);
-    margin-top: 0;
-    margin: 0 0 0 0;
-}
-
-ul.kontakty
-{
-    margin-bottom: 0;
-    padding-top: 0;
-    margin-top: 3px;
+    margin-top: 3px; 
     padding-left: 10%;
     padding-right: 6%;
     list-style-type: none;
 }
 
-
-
-ul.pozice
-{
-    margin-bottom: 0;
-    padding-bottom: 30px;
-    margin-top: 3px;
-    padding-left: 12%;
+/*Seznam v sekci Hardskills*/
+ul.skills {
+    color:azure;
+    margin-top: 3px; 
+    padding-left: 17%;
     padding-right: 6%;
-
 }
 
+/*Seznam v sekci Jazyky*/
+ul.jazyk {
+    color:azure;
+    margin-top: 3px;
+    padding-left: 17%;
+    padding-right: 6%;
+}
+
+/*Formátování veškerých odkazů na stránce (datový projekt, LinkedIn, e-mail)*/
+.pozice a:link,
+.pozice a:visited {
+    color: rgb(133, 101, 57);
+}
+.kontakt a:link,
+.kontakt a:visited {
+    color: azure;
+}
+.kontakt a:hover,
+.pozice a:hover {
+    color: #e1c4a3;
+}
+
+/*Zápatí stránky*/
+footer {
+    background-color: #ddbba3;
+    color:azure;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-left: 4%;
+    margin-right: 4%;
+}
